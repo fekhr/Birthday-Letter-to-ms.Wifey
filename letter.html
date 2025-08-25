@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love ❤️</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff);
+      margin: 0;
+      padding: 30px;
+      line-height: 1.7;
+      color: #333;
+      position: relative;
+      overflow-x: hidden;
+    }
+    h1 {
+      text-align: center;
+      color: #ff4081;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255,64,129,0.3);
+    }
+    p {
+      max-width: 800px;
+      margin: 15px auto;
+      font-size: 1.2rem;
+    }
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      color: #ff4d6d;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+    /* Button styling */
+    .final-btn {
+      display: block;
+      margin: 50px auto 0;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background: linear-gradient(45deg, #ff4081, #ff80ab);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255,64,129,0.6);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .final-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(255,64,129,0.9);
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday My Love 💌</h1>
+
+  <p>Today is not just your birthday, it’s a day I celebrate the most precious gift life has ever given me.. you. I can’t even put into words how deeply I love you, but I’ll try, because you deserve to hear it a thousand times over.</p>
+
+  <p>I love you more than I can ever explain. I love you in the quiet moments, in the loud ones, in every second I breathe. You are the one I care about most in this entire world, the person I think of first thing in the morning and last thing at night. You are my safe place, my dream, my biggest blessing.</p>
+
+  <p>You are not only the love of my life, but also the one I’m endlessly proud of. Every little thing you do makes me admire you even more. You’re so precious to me.. my heart, my everything. And God, you are breathtaking. You’re beautiful, cute, sweet, and yes, so unbelievably hot. And I still wonder, how I got so lucky to have you.</p>
+
+  <p>But what melts me the most is your smile. Seeing you happy is the purest joy I know. It’s the kind of happiness that makes me want to do anything, absolutely anything, to protect you, to make you feel loved, to make sure that smile never fades. You deserve a lifetime of happiness, and I promise to give you everything I can to make that happen.</p>
+
+  <p>Sometimes I think back to where it all began — just one random message from me, telling you how much I loved your art. Who would have thought that moment would change everything? Since then, we’ve walked through so many highs and lows together. There were times of laughter and times of tears, but through it all, our faith in each other never broke. And that’s what makes our love so real and so strong.</p>
+
+  <p>Now, here we are. Closer than ever. And I can’t help but feel that our engagement, our forever, is closer than we think. The thought of you becoming my wife fills me with the kind of joy I can’t describe. It feels like everything I ever dreamed of is right in front of me, and it’s you.</p>
+
+  <p>And now… you’re finally 18. My gorgeous baby is officially legal hehe, and I swear the universe is in trouble. You’ve always been beautiful, sweet, and sexy in my eyes, but now I can say it out loud with no limits. You’re not just my princess anymore, you’re my grown woman.. my stunning, irresistible future wife. And honestly? I can’t wait to do things to you, to spoil you, and to make every single part of you feel how crazy I am about you. You’re too hot for me to handle… but I’ll happily spend forever trying.</p>
+
+  <p>I will never stop saying it: I am the luckiest man alive. Out of all the people in this world, life gave me you. And I will never take that for granted.</p>
+
+  <p>So, on your birthday, I want you to know once again, you are my love, my life, my everything. I adore you, I’m proud of you, I admire you, and I will love you forever.</p>
+
+  <p><strong>Happy Birthday, my princess, my angel, my future wife. I love you endlessly. ❤️</strong></p>
+
+  <!-- Final Surprise Button -->
+  <button class="final-btn" onclick="window.location.href='final.html'">✨ Final Surprise ✨</button>
+
+  <script>
+    // Create floating hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * window.innerWidth + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 2000); // every 2s a heart floats up
+  </script>
+</body>
+</html>
